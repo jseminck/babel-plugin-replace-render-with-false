@@ -7,9 +7,12 @@ export default function ({types: t}) {
           return;
         }
 
-        const returnStatement = path.get("body").get("body")[0];
-        returnStatement.get("argument").remove();
-        returnStatement.set("argument", t.BooleanLiteral(false));
+        const componentName = path.find(parent => parent.isClassDeclaration())
+        if (componentName.node.id.name === "MyClass") {
+          const returnStatement = path.get("body").get("body")[0];
+          returnStatement.get("argument").remove();
+          returnStatement.set("argument", t.BooleanLiteral(false));
+        }
       }
     }
   };
