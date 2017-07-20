@@ -1,0 +1,24 @@
+{
+  "name": "babel-plugin-replace-render-with-false",
+  "version": "0.0.1",
+  "description": "Replaces render() function of a defined list of React components to return nothing",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jseminck/babel-plugin-replace-render-with-false.git"
+  },
+  "keywords": [
+    "babel",
+    "render",
+    "false"
+  ],
+  "author": "Joachim Seminck",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jseminck/babel-plugin-replace-render-with-false/issues"
+  },
+  "homepage": "https://github.com/jseminck/babel-plugin-replace-render-with-false#readme"
+}
